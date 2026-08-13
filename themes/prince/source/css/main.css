@@ -1221,20 +1221,22 @@ h3.aside-title {
   opacity: 0.8;
 }
 
-.github-link::after {
+.email-link::after {
   font-family: FontAwesome;
-  content: "\f09b";
+  content: "\f0e0";
   margin: 10px;
   color: #000;
   font-size: 18px;
 }
 
-.twitter-link::after {
-  font-family: FontAwesome;
-  content: "\f099";
+.douban-link::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   margin: 10px;
-  color: #000;
-  font-size: 18px;
+  background: url(/img/douban.svg) no-repeat center/contain;
+  vertical-align: middle;
 }
 
 .weibo-link::after {
