@@ -101,7 +101,7 @@ theme: prince
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type:git
-  repo:git@gighub.com:cjw061425/stepchen.git
-  branch:main
-  message:"Site updated:{{now('YYYY-MM-DD HH:mm:ss')}}"
+  type: git
+  repo: https://github.com/cjw061425/stepchen.git
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"

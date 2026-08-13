@@ -1,0 +1,27 @@
+#header
+name: Hello
+description: simple & clean
+favicon: /fav.png
+ga: ''
+
+#nav
+nav:
+    HOME: /
+    ARCHIVE: /archives/
+    # GALLERY:  /gallery/
+    # ABOUT: /about/
+
+#post
+excerpt_link: Read More
+
+
+#about me
+aboutMeImg: /about_me.jpg
+
+github: https://github.com/yiliashaw
+twitter: https://twitter.com/YiliaShaw
+weibo: http://weibo.com/kathleenxiao
+
+#copyright
+themeLink: https://github.com/yiliashaw/hexo-theme-prince
+
