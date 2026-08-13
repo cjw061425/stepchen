@@ -1221,28 +1221,31 @@ h3.aside-title {
   opacity: 0.8;
 }
 
+.follow-icons>a::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 20px;
+}
+
 .email-link::after {
   font-family: FontAwesome;
   content: "\f0e0";
-  margin: 10px;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .douban-link::after {
   content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 10px;
   background: url(/img/douban.svg) no-repeat center/contain;
-  vertical-align: middle;
 }
 
 .weibo-link::after {
   font-family: FontAwesome;
   content: "\f18a";
-  margin: 10px;
   color: #000;
   font-size: 18px;
 }
