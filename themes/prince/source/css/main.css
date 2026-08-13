@@ -1240,7 +1240,7 @@ h3.aside-title {
 
 .douban-link::after {
   content: "";
-  background: url(/img/douban.svg?v=2) no-repeat center/contain;
+  background: url(/img/douban.svg?v=3) no-repeat center/contain;
 }
 
 .weibo-link::after {
