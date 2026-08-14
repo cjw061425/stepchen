@@ -1272,6 +1272,30 @@ main.about-container {
   text-decoration: none;
 }
 
+.all-categories-box {
+  padding-top: 20px;
+}
+
+.all-categories-box a {
+  font-family: 'PingFangSC-Regular', sans-serif, 'Microsoft YaHei', STHeiti;
+  font-size: 12px !important;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  background: #f2f2f2;
+  color: #666;
+  padding: 6px 7px 6px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.all-categories-box a:hover {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
 .follow-icons {
   text-align: center;
   padding-top: 10px;

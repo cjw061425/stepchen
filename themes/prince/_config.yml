@@ -27,5 +27,5 @@ weibo: https://weibo.com/u/1683654684
 themeLink: https://github.com/yiliashaw/hexo-theme-prince
 
 #assets version for cache busting (bump when css/js changed)
-asset_version: 12
+asset_version: 13
 

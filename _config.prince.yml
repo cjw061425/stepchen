@@ -31,4 +31,4 @@ deploy:
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 #assets version for cache busting (bump when css/js changed)
-asset_version: 12
+asset_version: 13
