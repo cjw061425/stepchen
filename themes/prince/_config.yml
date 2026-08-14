@@ -1,5 +1,5 @@
 #header
-name: Hello
+name: Stepchen
 description: simple & clean
 favicon: /fav.png
 ga: ''
@@ -18,13 +18,13 @@ excerpt_link: Read More
 #about me
 aboutMeImg: /about_me.jpg
 
+#sidebar social links
 email: chenjiawei100@outlook.com
 douban: https://www.douban.com/people/cjw1025/
 weibo: https://weibo.com/u/1683654684
 
 #copyright
-themeLink: https://github.com/yiliashaw/hexo-theme-prince
+themeLink: ''
 
 #assets version for cache busting (bump when css/js changed)
 asset_version: 18
-
