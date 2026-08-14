@@ -219,7 +219,6 @@ nav {
   margin: 0 auto;
   /* background: #fff; */
   background-color: #fafafa;
-  box-shadow: 0 0 15px 15px rgba(200, 200, 200, .14);
   position: relative;
   overflow: hidden;
   padding-top: 100px;
@@ -232,7 +231,7 @@ main {
   margin-top: 500px;
   width: 95%;
   max-width: 960px;
-  background: #fff;
+  background: transparent;
   margin: 0 auto;
 }
 
@@ -1579,11 +1578,10 @@ html[data-theme="dark"] nav {
 
 html[data-theme="dark"] .wrap {
   background-color: #16181d;
-  box-shadow: 0 0 15px 15px rgba(0, 0, 0, .35);
 }
 
 html[data-theme="dark"] main {
-  background: #1d2026;
+  background: transparent;
 }
 
 html[data-theme="dark"] .copyright {
