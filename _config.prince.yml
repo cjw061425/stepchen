@@ -8,7 +8,6 @@ ga: ''
 nav:
     HOME: /
     ARCHIVE: /archives/
-    GALLERY: /gallery/
     ABOUT: /about/
     RSS: /atom.xml
 
