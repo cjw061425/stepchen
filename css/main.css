@@ -456,12 +456,15 @@ h1.prince-log a {
   ul.main-nav-items {
     float: right;
     margin-right: 15px;
-    display: none;
+    display: block;
   }
   .main-nav-items li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
+    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
   }
   .main-nav-items li a {
     font-family: 'ArialRoundedMTBold', 'PingFangSC-Regular', 'Microsoft YaHei';
@@ -471,6 +474,7 @@ h1.prince-log a {
     color: #808080;
     line-height: 60px;
     display: inline-block;
+    vertical-align: middle;
     -o-transition: .3s;
     -ms-transition: .3s;
     -moz-transition: .3s;
