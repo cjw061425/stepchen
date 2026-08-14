@@ -9,6 +9,7 @@ nav:
     HOME: /
     ARCHIVE: /archives/
     ABOUT: /about/
+    GALLERY: /gallery/
     RSS: /atom.xml
 
 #post
