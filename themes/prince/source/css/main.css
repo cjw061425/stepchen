@@ -1491,14 +1491,15 @@ main.about-container {
 }
 
 .copyright p a {
-  color: #000;
+  color: inherit;
 }
 
 .hexo-logo {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  margin: 0 4px;
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  margin: 0 3px;
+  color: inherit;
 }
 
 
@@ -1597,7 +1598,7 @@ html[data-theme="dark"] .copyright p {
 }
 
 html[data-theme="dark"] .copyright p a {
-  color: #c9ccd1;
+  color: inherit;
 }
 
 html[data-theme="dark"] a,
@@ -1763,10 +1764,6 @@ html[data-theme="dark"] .weibo-link::after {
 
 html[data-theme="dark"] .douban-link::after {
   filter: invert(1);
-}
-
-html[data-theme="dark"] .hexo-logo {
-  filter: invert(1) brightness(1.5);
 }
 
 html[data-theme="dark"] .articles .post-block {
