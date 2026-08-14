@@ -976,6 +976,7 @@ a.article-more:hover {
   text-align: center;
   display: inline-block;
   float: right;
+  margin-left: 18px;
 }
 
 .post-tags-box::before {
