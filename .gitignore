@@ -6,3 +6,7 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 本地状态/工具文件，不进仓库
+.workbuddy/
+.vmark/
