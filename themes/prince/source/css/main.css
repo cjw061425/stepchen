@@ -1357,3 +1357,10 @@ main.about-container {
 .copyright p a {
   color: #000;
 }
+
+.hexo-logo {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
