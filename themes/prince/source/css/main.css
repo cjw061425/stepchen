@@ -514,6 +514,27 @@ h1.prince-log a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .main-nav-items li a {
+    position: relative;
+  }
+  .main-nav-items li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    height: 1px;
+    background: #2c2c2c;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .25s ease;
+  }
+  .main-nav-items li a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -529,6 +550,23 @@ h1.prince-log a {
 
 .post-block {
   margin-bottom: 50px;
+}
+
+/* refined home post card */
+.articles .post-block {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 30px 34px 24px;
+  margin-bottom: 26px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.articles .post-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+  border-color: #e0e0e0;
 }
 
 .post-block .post-gallery>p {
@@ -1201,6 +1239,17 @@ aside.sidebar {
   color: #000;
 }
 
+.archive .post-item {
+  border-bottom: 1px solid #eee;
+  padding: 14px 8px;
+  border-radius: 6px;
+  transition: background .2s ease;
+}
+
+.archive .post-item:hover {
+  background: #fafafa;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -1261,16 +1310,20 @@ main.about-container {
   /* text-transform: uppercase; */
   background: #f2f2f2;
   color: #666;
-  padding: 6px 7px 6px;
+  padding: 6px 10px 6px;
   margin-right: 5px;
   margin-bottom: 8px;
   display: inline-block;
-  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
 }
 
 .all-tags-box a:hover {
   background: #333;
   color: #fff;
+  border-color: #333;
+  transform: translateY(-1px);
   text-decoration: none;
 }
 
@@ -1285,16 +1338,20 @@ main.about-container {
   /* text-transform: uppercase; */
   background: #f2f2f2;
   color: #666;
-  padding: 6px 7px 6px;
+  padding: 6px 10px 6px;
   margin-right: 5px;
   margin-bottom: 8px;
   display: inline-block;
-  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
 }
 
 .all-categories-box a:hover {
   background: #333;
   color: #fff;
+  border-color: #333;
+  transform: translateY(-1px);
   text-decoration: none;
 }
 
@@ -1417,12 +1474,14 @@ main.about-container {
 /*--------------------------------------------------------------*/
 
 .copyright {
-  padding: 35px 0;
+  padding: 40px 0 36px;
   background: #f2f2f2;
+  border-top: 1px solid #e6e6e6;
   overflow: hidden;
   font-family: 'PingFangSC-Regular', sans-serif, 'Microsoft YaHei', STHeiti;
   clear: both;
   text-align: center;
+  letter-spacing: .3px;
 }
 
 .copyright p {
@@ -1710,7 +1769,50 @@ html[data-theme="dark"] .hexo-logo {
   filter: invert(1) brightness(1.5);
 }
 
+html[data-theme="dark"] .articles .post-block {
+  background: #20242b;
+  border-color: #2a2f37;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .articles .post-block:hover {
+  background: #242932;
+  border-color: #353b45;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .35);
+}
+
+html[data-theme="dark"] .archive .post-item {
+  border-bottom-color: #2a2f37;
+}
+
+html[data-theme="dark"] .archive .post-item:hover {
+  background: #23272e;
+}
+
+html[data-theme="dark"] .all-tags-box a,
+html[data-theme="dark"] .all-categories-box a {
+  background: #23272e;
+  border-color: #2f343c;
+  color: #b9bdc5;
+}
+
+html[data-theme="dark"] .all-tags-box a:hover,
+html[data-theme="dark"] .all-categories-box a:hover {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+html[data-theme="dark"] .copyright {
+  border-top-color: #2a2f37;
+}
+
 html[data-theme="dark"] ::selection {
   background: #444c58;
   color: #fff;
+}
+
+::selection {
+  background: #e6e6e6;
+  color: #1a1a1a;
 }
