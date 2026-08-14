@@ -976,13 +976,12 @@ a.article-more:hover {
   text-align: center;
   display: inline-block;
   float: right;
-  margin-left: 18px;
 }
 
 .post-tags-box::before {
   font-family: FontAwesome;
   content: "\f02c";
-  margin-right: 9px;
+  margin-right: 12px;
   color: #000;
   font-size: 12px;
 }
@@ -1008,6 +1007,7 @@ a.article-more:hover {
   text-align: center;
   display: inline-block;
   float: right;
+  margin-left: 18px;
   transition: .3s;
   color: #797979;
   font-size: 12px;
@@ -1016,7 +1016,7 @@ a.article-more:hover {
 .post-categories-box::before {
   font-family: FontAwesome;
   content: "\f07b";
-  margin-right: 9px;
+  margin-right: 12px;
   color: #000;
   font-size: 12px;
 }
@@ -1155,7 +1155,7 @@ aside.sidebar {
 .postList-tags-box::before {
   font-family: FontAwesome;
   content: "\f02c";
-  margin-right: 9px;
+  margin-right: 12px;
   color: #000;
   font-size: 12px;
 }
@@ -1180,7 +1180,7 @@ aside.sidebar {
 .postList-categories-box::before {
   font-family: FontAwesome;
   content: "\f07b";
-  margin-right: 9px;
+  margin-right: 12px;
   color: #000;
   font-size: 12px;
 }

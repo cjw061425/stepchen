@@ -27,4 +27,4 @@ weibo: https://weibo.com/u/1683654684
 themeLink: ''
 
 #assets version for cache busting (bump when css/js changed)
-asset_version: 21
+asset_version: 22
