@@ -198,7 +198,7 @@ a img {
 } */
 
 body {
-  font-family: 'PingFangSC-Regular', monospace, 'Microsoft YaHei';
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Source Han Sans CN', 'WenQuanYi Micro Hei', sans-serif;
   color: #333;
   font-size: 14px;
   background-color: #f2f2f2;
