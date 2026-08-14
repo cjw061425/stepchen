@@ -133,3 +133,37 @@ document.addEventListener('DOMContentLoaded', setTocStyle)
 window.addEventListener('resize', handlerWindowResize)
 
 
+/* =========================================================
+   Dark mode toggle
+   ========================================================= */
+(function () {
+  var toggle = document.querySelector('.theme-toggle')
+  if (!toggle) return
+
+  var root = document.documentElement
+  var icon = toggle.querySelector('i')
+
+  function syncIcon() {
+    var isDark = root.getAttribute('data-theme') === 'dark'
+    if (icon) {
+      icon.className = isDark ? 'fa fa-sun-o' : 'fa fa-moon-o'
+    }
+    var label = isDark ? '切换到浅色模式' : '切换到深色模式'
+    toggle.setAttribute('aria-label', label)
+    toggle.title = label
+  }
+
+  syncIcon()
+
+  toggle.addEventListener('click', function () {
+    var isDark = root.getAttribute('data-theme') === 'dark'
+    var next = isDark ? 'light' : 'dark'
+    root.setAttribute('data-theme', next)
+    try {
+      localStorage.setItem('theme', next)
+    } catch (e) {}
+    syncIcon()
+  })
+})()
+
+

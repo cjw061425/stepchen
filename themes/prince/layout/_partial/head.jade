@@ -1,4 +1,14 @@
 meta(charset='utf-8')
+script.
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) {
+        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
 title= config.title
 meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href="/favicon.png?v=#{theme.asset_version}")

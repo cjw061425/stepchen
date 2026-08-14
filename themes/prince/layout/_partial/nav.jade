@@ -12,3 +12,5 @@ nav.page-navigation
       each value, key in theme.nav
         li.menu-item
           a(href=url_for(value) target='_self')=key
+    button.theme-toggle(type="button" aria-label="切换深色模式" title="切换深色模式")
+      i.fa.fa-moon-o
