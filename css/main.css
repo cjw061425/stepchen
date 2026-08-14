@@ -412,6 +412,7 @@ pre .javascript .function {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .nav-container:after {
@@ -1438,4 +1439,277 @@ main.about-container {
   height: 18px;
   vertical-align: middle;
   margin: 0 4px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  THEME TOGGLE (dark mode switch)
+/*-----------------------------------------------------------------------------------*/
+
+.theme-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #424243;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 1;
+  z-index: 1001;
+  -webkit-transition: background .3s, color .3s, transform .2s;
+  -moz-transition: background .3s, color .3s, transform .2s;
+  -ms-transition: background .3s, color .3s, transform .2s;
+  transition: background .3s, color .3s, transform .2s;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, .06);
+}
+
+.theme-toggle:active {
+  transform: translateY(-50%) scale(.9);
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+/* keep the menu clear of the absolutely-positioned toggle on desktop */
+@media only screen and (min-width: 768px) {
+  ul.main-nav-items {
+    margin-right: 50px;
+  }
+}
+
+/* on mobile the hamburger sits at the right edge, shift the toggle left of it */
+@media only screen and (max-width: 767px) {
+  .theme-toggle {
+    right: 56px;
+  }
+  .theme-toggle:hover {
+    background: rgba(0, 0, 0, .06);
+  }
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  DARK MODE
+/*-----------------------------------------------------------------------------------*/
+
+html[data-theme="dark"] body {
+  background-color: #16181d;
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] nav {
+  background: #1d2026;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+html[data-theme="dark"] .wrap {
+  background-color: #16181d;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, .35);
+}
+
+html[data-theme="dark"] main {
+  background: #1d2026;
+}
+
+html[data-theme="dark"] .copyright {
+  background: #16181d;
+}
+
+html[data-theme="dark"] .copyright p {
+  color: #8a8f98;
+}
+
+html[data-theme="dark"] .copyright p a {
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] a,
+html[data-theme="dark"] h1.prince-log a,
+html[data-theme="dark"] .page-header-logo a {
+  color: #b9bdc5;
+}
+
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:link,
+html[data-theme="dark"] a:visited,
+html[data-theme="dark"] a:active,
+html[data-theme="dark"] a:focus {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .main-nav-items li a {
+  color: #9aa0a8;
+}
+
+html[data-theme="dark"] .main-nav-items li a:hover {
+  color: #fff;
+}
+
+html[data-theme="dark"] .icon-bar {
+  background: #c9ccd1;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+html[data-theme="dark"] .post-title a,
+html[data-theme="dark"] .post-entry h1,
+html[data-theme="dark"] .post-entry h2,
+html[data-theme="dark"] .post-entry h3,
+html[data-theme="dark"] .post-entry h4,
+html[data-theme="dark"] .post-entry h5,
+html[data-theme="dark"] .post-entry h6 {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .post-info,
+html[data-theme="dark"] .post-meta,
+html[data-theme="dark"] .article-more,
+html[data-theme="dark"] .post-tags-box,
+html[data-theme="dark"] .post-categories-box,
+html[data-theme="dark"] .postList-tags-box,
+html[data-theme="dark"] .postList-categories-box {
+  color: #9aa0a8;
+}
+
+html[data-theme="dark"] .post-tags-box a,
+html[data-theme="dark"] .post-categories-box a,
+html[data-theme="dark"] .postList-tags-box a,
+html[data-theme="dark"] .postList-categories-box a {
+  color: #9aa0a8;
+}
+
+html[data-theme="dark"] .post-meta {
+  border-bottom: 1px solid #2c3038;
+}
+
+html[data-theme="dark"] .post-entry hr {
+  border-bottom: 1px solid #2c3038;
+}
+
+html[data-theme="dark"] .post-entry a,
+html[data-theme="dark"] .toc a {
+  border-bottom: 1px solid #555;
+}
+
+html[data-theme="dark"] .post-entry a:hover,
+html[data-theme="dark"] .toc a:hover {
+  background-color: #3a3f48;
+}
+
+html[data-theme="dark"] .post-entry blockquote,
+html[data-theme="dark"] blockquote {
+  background-color: #20242b;
+}
+
+html[data-theme="dark"] .post-entry blockquote p {
+  border-left: 3px solid #5a606b;
+  color: #9aa0a8;
+}
+
+html[data-theme="dark"] code {
+  color: #e06c75;
+  background: #2b2f36;
+}
+
+html[data-theme="dark"] pre code {
+  color: #e06c75;
+  background: none;
+}
+
+html[data-theme="dark"] .post-entry pre,
+html[data-theme="dark"] .post-entry .highlight,
+html[data-theme="dark"] .code pre {
+  background: #1b1e24 !important;
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] .gutter pre {
+  color: #6b7280;
+  background-color: #20242b;
+}
+
+html[data-theme="dark"] .post-entry td {
+  border-bottom: 1px solid #2c3038;
+}
+
+html[data-theme="dark"] .post-entry th {
+  border-bottom: 2px solid #2c3038;
+}
+
+html[data-theme="dark"] .post-entry input {
+  border: 1px solid #3a3f48;
+  background-color: #20242b;
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] .post-entry input[type="submit"] {
+  background-color: #e8eaed;
+  color: #16181d;
+  border-color: #e8eaed;
+}
+
+html[data-theme="dark"] .all-tags-box a,
+html[data-theme="dark"] .all-categories-box a {
+  background: #2a2e36;
+  color: #aaa;
+}
+
+html[data-theme="dark"] .all-tags-box a:hover,
+html[data-theme="dark"] .all-categories-box a:hover {
+  background: #444;
+  color: #fff;
+}
+
+html[data-theme="dark"] .widget {
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] h3.aside-title {
+  color: #e8eaed;
+  border-bottom: 1px dotted #3a3f48;
+}
+
+html[data-theme="dark"] .post-tags-box::before,
+html[data-theme="dark"] .post-categories-box::before,
+html[data-theme="dark"] .postList-tags-box::before,
+html[data-theme="dark"] .postList-categories-box::before,
+html[data-theme="dark"] .email-link::after,
+html[data-theme="dark"] .weibo-link::after {
+  color: #c9ccd1;
+}
+
+html[data-theme="dark"] .douban-link::after {
+  filter: invert(1);
+}
+
+html[data-theme="dark"] .hexo-logo {
+  filter: invert(1) brightness(1.5);
+}
+
+html[data-theme="dark"] ::selection {
+  background: #444c58;
+  color: #fff;
 }
