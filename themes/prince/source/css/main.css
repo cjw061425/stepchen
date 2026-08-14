@@ -574,19 +574,19 @@ h1.prince-log a {
 }
 
 .post-title {
-  font-family: "PingFangSC-SemiBold", 'Microsoft YaHei', Arial, sans-serif;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", Georgia, serif;
   margin-bottom: 25px;
   margin-top: 20px;
   text-align: center;
   font-size: 28px;
+  font-weight: 700;
   /* letter-spacing: 1.25px; */
-  /* font-weight: 400; */
   /* text-transform: uppercase; */
   margin-bottom: 10px;
 }
 
 .post-title a {
-  font-family: "PingFangSC-Medium", 'Microsoft YaHei', Arial, sans-serif;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", Georgia, serif;
   color: #000;
 }
 
