@@ -1,5 +1,5 @@
 mixin postInfo(page)
-  .post-info= full_date(page.date,'MMM Do YYYY')
+  .post-info= full_date(page.date,'MMMDo YYYY')
 
 mixin postPhotos(page)
   if page.photos && page.photos.length
@@ -57,12 +57,12 @@ mixin postTagList()
             if item.link !== ''
               a.post-item-link(href=url_for(item.link) target='_blank')
                 span.post-title.col-sm-9.col-xs-12=title
-                span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMM Do YYYY')
+                span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
               .postList-tags-box!= list_tags(item.tags,{show_count:false,style:null,saperator:','})
             else
               a.post-item-link(href=url_for(item.path))
                 span.post-title.col-sm-9.col-xs-12=title
-                span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMM Do YYYY')
+                span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
               .postList-tags-box!= list_tags(item.tags,{show_count:false,style:null,saperator:','})
       -})
     -})
@@ -77,9 +77,9 @@ mixin postList()
         if item.link !== ''
           a.post-item-link(href=url_for(item.link) target='_blank')
             span.post-title.col-sm-9.col-xs-12=title
-            span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMM Do YYYY')
+            span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
         else
           a.post-item-link(href=url_for(item.path))
             span.post-title.col-sm-9.col-xs-12=title
-            span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMM Do YYYY')
+            span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
     -})
