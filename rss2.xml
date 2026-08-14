@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stepchen</title>
+    <link>https://stepchen.com/</link>
+    <description>world</description>
+    <language>Zh-CN</language>
+    <copyright>All rights reserved 2026, Stpehen Chen</copyright>
+    <lastBuildDate>Thu, 13 Aug 2026 09:37:28 GMT</lastBuildDate>
+    <generator>Hexo</generator>
+    <atom:link href="https://stepchen.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我的第一篇文章</title>
+      <link>https://stepchen.com/2026/08/13/20260813%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <description>
+        <![CDATA[<p>Welcome to Stepchen！</p>
+<p>这是我的第一篇文章。<br>用了三个小时，经过很多次失败，但是借助ai，还是成功了。<br>这是一个好的开始😊</p>
+<h2 id=""><a href="#" class="headerlink" title="]]>
+      </description>
+      <author>Stpehen Chen</author>
+      <pubDate>Thu, 13 Aug 2026 09:37:28 GMT</pubDate>
+      <content:encoded>
+        <![CDATA[<p>Welcome to Stepchen！</p><p>这是我的第一篇文章。<br>用了三个小时，经过很多次失败，但是借助ai，还是成功了。<br>这是一个好的开始😊</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>

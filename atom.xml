@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Stpehen Chen</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://stepchen.com/</id>
+  <link href="https://stepchen.com/" rel="alternate"/>
+  <link href="https://stepchen.com/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Stpehen Chen</rights>
+  <subtitle>world</subtitle>
+  <title>Stepchen</title>
+  <updated>2026-08-13T09:37:28.548Z</updated>
+  <entry>
+    <author>
+      <name>Stpehen Chen</name>
+    </author>
+    <content>
+      <![CDATA[<p>Welcome to Stepchen！</p><p>这是我的第一篇文章。<br>用了三个小时，经过很多次失败，但是借助ai，还是成功了。<br>这是一个好的开始😊</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
+    </content>
+    <id>https://stepchen.com/2026/08/13/20260813%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <link href="https://stepchen.com/2026/08/13/20260813%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <published>2026-08-13T09:37:28.548Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to Stepchen！</p>
+<p>这是我的第一篇文章。<br>用了三个小时，经过很多次失败，但是借助ai，还是成功了。<br>这是一个好的开始😊</p>
+<h2 id=""><a href="#" class="headerlink" title="]]>
+    </summary>
+    <title>我的第一篇文章</title>
+    <updated>2026-08-13T09:37:28.548Z</updated>
+  </entry>
+</feed>
