@@ -28,6 +28,8 @@ mixin posts()
             != item.content
         .post-meta
           a(href=url_for(item.path)).article-more= theme.excerpt_link
+          if (item.categories && item.categories.length > 0)
+            .post-categories-box!= list_categories(item.categories,{show_count:false,style:null,separator:','})
           if (item.tags && item.tags.length >0)
             .post-tags-box!= list_tags(item.tags,{show_count:false,style:null,saperator:','})
     - })
@@ -42,6 +44,8 @@ mixin post(page)
       +postInfo(page)
       .post-entry
         != page.content
+      if (page.categories && page.categories.length > 0)
+        .post-categories-box!= list_categories(page.categories,{show_count:false,style:null,separator:','})
       if (page.tags && page.tags.length >0)
         .post-tags-box!= list_tags(page.tags,{show_count:false,style:null,saperator:','})
   !=toc(page.content, {list_number:false})
@@ -58,11 +62,15 @@ mixin postTagList()
               a.post-item-link(href=url_for(item.link) target='_blank')
                 span.post-title.col-sm-9.col-xs-12=title
                 span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
+              if (item.categories && item.categories.length > 0)
+                .postList-categories-box!= list_categories(item.categories,{show_count:false,style:null,separator:','})
               .postList-tags-box!= list_tags(item.tags,{show_count:false,style:null,saperator:','})
             else
               a.post-item-link(href=url_for(item.path))
                 span.post-title.col-sm-9.col-xs-12=title
                 span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
+              if (item.categories && item.categories.length > 0)
+                .postList-categories-box!= list_categories(item.categories,{show_count:false,style:null,separator:','})
               .postList-tags-box!= list_tags(item.tags,{show_count:false,style:null,saperator:','})
       -})
     -})
@@ -82,4 +90,6 @@ mixin postList()
           a.post-item-link(href=url_for(item.path))
             span.post-title.col-sm-9.col-xs-12=title
             span.post-date.col-sm-3.col-xs-12=full_date(item.date,'MMMDo YYYY')
+        if (item.categories && item.categories.length > 0)
+          .postList-categories-box!= list_categories(item.categories,{show_count:false,style:null,separator:','})
     -})
