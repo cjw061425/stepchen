@@ -8,8 +8,9 @@ ga: ''
 nav:
     HOME: /
     ARCHIVE: /archives/
+    ABOUT: /about/
+    RSS: /atom.xml
     # GALLERY:  /gallery/
-    # ABOUT: /about/
 
 #post
 excerpt_link: Read More
