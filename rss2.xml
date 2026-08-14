@@ -3,10 +3,9 @@
   <channel>
     <title>Stepchen</title>
     <link>https://stepchen.com/</link>
-    <description>world</description>
     <language>Zh-CN</language>
     <copyright>All rights reserved 2026, Stpehen Chen</copyright>
-    <lastBuildDate>Thu, 13 Aug 2026 09:37:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 04:55:48 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://stepchen.com/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -18,6 +17,9 @@
 <h2 id=""><a href="#" class="headerlink" title="]]>
       </description>
       <author>Stpehen Chen</author>
+      <category domain="https://stepchen.com/categories/%E9%9A%8F%E7%AC%94/">随笔</category>
+      <category domain="https://stepchen.com/tags/%E5%8D%9A%E5%AE%A2/">博客</category>
+      <category domain="https://stepchen.com/tags/%E5%BC%80%E5%A7%8B/">开始</category>
       <pubDate>Thu, 13 Aug 2026 09:37:28 GMT</pubDate>
       <content:encoded>
         <![CDATA[<p>Welcome to Stepchen！</p><p>这是我的第一篇文章。<br>用了三个小时，经过很多次失败，但是借助ai，还是成功了。<br>这是一个好的开始😊</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
