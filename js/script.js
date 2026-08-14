@@ -1,3 +1,4 @@
+try {
 (function (a) {
   "use strict";
 
@@ -92,6 +93,9 @@
   })
 
 })(jQuery);
+} catch (e) {
+  console.error('theme script (jQuery part) failed:', e);
+}
 
 const postContainerEl = document.querySelector('.prince-container')
 
