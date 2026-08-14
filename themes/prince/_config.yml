@@ -8,9 +8,9 @@ ga: ''
 nav:
     HOME: /
     ARCHIVE: /archives/
+    GALLERY: /gallery/
     ABOUT: /about/
     RSS: /atom.xml
-    # GALLERY:  /gallery/
 
 #post
 excerpt_link: Read More
@@ -27,5 +27,5 @@ weibo: https://weibo.com/u/1683654684
 themeLink: https://github.com/yiliashaw/hexo-theme-prince
 
 #assets version for cache busting (bump when css/js changed)
-asset_version: 9
+asset_version: 10
 

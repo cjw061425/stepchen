@@ -8,8 +8,8 @@ ga: ''
 nav:
     HOME: /
     ARCHIVE: /archives/
-    ABOUT: /about/
     GALLERY: /gallery/
+    ABOUT: /about/
     RSS: /atom.xml
 
 #post
@@ -29,3 +29,6 @@ deploy:
   repo: https://github.com/cjw061425/stepchen.git
   branch: gh-pages
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+
+#assets version for cache busting (bump when css/js changed)
+asset_version: 10
