@@ -1304,22 +1304,20 @@ main.about-container {
   font-size: 12px !important;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
-  background: #fafafa;
+  background: transparent;
   color: #666;
   padding: 6px 10px 6px;
   margin-right: 5px;
   margin-bottom: 8px;
   display: inline-block;
-  border: 1px solid #d8d4c8;
+  border: 1px solid transparent;
   border-radius: 4px;
-  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
+  transition: background .2s ease;
 }
 
 .all-tags-box a:hover {
-  background: #333;
-  color: #fff;
-  border-color: #333;
-  transform: translateY(-1px);
+  background: #f1efeb;
+  color: #333;
   text-decoration: none;
 }
 
@@ -1332,22 +1330,20 @@ main.about-container {
   font-size: 12px !important;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
-  background: #fafafa;
+  background: transparent;
   color: #666;
   padding: 6px 10px 6px;
   margin-right: 5px;
   margin-bottom: 8px;
   display: inline-block;
-  border: 1px solid #d8d4c8;
+  border: 1px solid transparent;
   border-radius: 4px;
-  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
+  transition: background .2s ease;
 }
 
 .all-categories-box a:hover {
-  background: #333;
-  color: #fff;
-  border-color: #333;
-  transform: translateY(-1px);
+  background: #f1efeb;
+  color: #333;
   text-decoration: none;
 }
 
@@ -1727,18 +1723,6 @@ html[data-theme="dark"] .post-entry input[type="submit"] {
   border-color: #e8eaed;
 }
 
-html[data-theme="dark"] .all-tags-box a,
-html[data-theme="dark"] .all-categories-box a {
-  background: #2a2e36;
-  color: #aaa;
-}
-
-html[data-theme="dark"] .all-tags-box a:hover,
-html[data-theme="dark"] .all-categories-box a:hover {
-  background: #444;
-  color: #fff;
-}
-
 html[data-theme="dark"] .widget {
   color: #c9ccd1;
 }
@@ -1783,16 +1767,16 @@ html[data-theme="dark"] .archive .post-item:hover {
 
 html[data-theme="dark"] .all-tags-box a,
 html[data-theme="dark"] .all-categories-box a {
-  background: #23272e;
-  border-color: #2f343c;
+  background: transparent;
+  border-color: transparent;
   color: #b9bdc5;
 }
 
 html[data-theme="dark"] .all-tags-box a:hover,
 html[data-theme="dark"] .all-categories-box a:hover {
-  background: #333;
-  border-color: #555;
-  color: #fff;
+  background: #2a2f37;
+  border-color: transparent;
+  color: #c9ccd1;
 }
 
 html[data-theme="dark"] .copyright {
