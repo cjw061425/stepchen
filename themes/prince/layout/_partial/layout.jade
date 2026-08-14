@@ -12,10 +12,10 @@ html(lang=config.language)
     footer
       include copyright
 
-    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='/js/jquery-3.2.1.min.js?v=#{theme.asset_version}')
 
-    script(src='/js/bootstrap.min.js')
+    script(src='/js/bootstrap.min.js?v=#{theme.asset_version}')
 
     script(src='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js')
 
-    script(src='/js/script.js')
+    script(src='/js/app.js?v=#{theme.asset_version}')
