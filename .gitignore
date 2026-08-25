@@ -10,3 +10,16 @@ _multiconfig.yml
 # 本地状态/工具文件，不进仓库
 .workbuddy/
 .vmark/
+
+# R2 上传脚本的本地凭证（含密钥，绝不提交）
+tools/r2/.env
+
+# 博文图片现托管于 Cloudflare R2（img.stepchen.com），不再进 git 仓库
+source/images/*.jpg
+source/images/*.jpeg
+source/images/*.png
+source/images/*.gif
+source/images/*.webp
+source/images/*.avif
+source/images/*.svg
+source/images/.gitkeep
