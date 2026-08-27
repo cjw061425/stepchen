@@ -1,3 +1,24 @@
 .copyright
   p!='Crafted with <i class="fa fa-heart"></i> by&nbsp;' + theme.name
   p!='Powered by <a href="https://hexo.io/" target="_blank" aria-label="Hexo"><svg class="hexo-logo" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" d="M12 3 L20 8 L20 16 L12 21 L4 16 L4 8 Z M9 8 V16 M15 8 V16 M9 12 H15"/></svg></a> Hexo'
+  p
+    span#site-runtime
+  script.
+    (function () {
+      // 网站上线时间，按需修改
+      var start = new Date('2026-08-13T00:00:00');
+      var el = document.getElementById('site-runtime');
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function tick() {
+        var diff = Date.now() - start.getTime();
+        if (diff < 0) diff = 0;
+        var s = Math.floor(diff / 1000);
+        var days = Math.floor(s / 86400);
+        var hours = Math.floor((s % 86400) / 3600);
+        var minutes = Math.floor((s % 3600) / 60);
+        var seconds = s % 60;
+        if (el) el.textContent = '本站已运行 ' + days + ' 天 ' + pad(hours) + ' 时 ' + pad(minutes) + ' 分 ' + pad(seconds) + ' 秒';
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
