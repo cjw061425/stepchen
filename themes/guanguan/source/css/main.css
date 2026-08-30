@@ -644,6 +644,8 @@ h1.guanguan-log a {
 .post-entry img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 1.5em auto;
 }
 
 .post-entry p {
