@@ -458,7 +458,7 @@ pre .javascript .function {
   z-index: 999;
 }
 
-h1.prince-log {
+h1.guanguan-log {
   height: 60px;
   margin-right: 20px;
   line-height: 60px;
@@ -468,7 +468,7 @@ h1.prince-log {
   font-size: 16px;
 }
 
-h1.prince-log a {
+h1.guanguan-log a {
   color: #424243;
 }
 
@@ -1623,7 +1623,7 @@ html[data-theme="dark"] .copyright p a {
 }
 
 html[data-theme="dark"] a,
-html[data-theme="dark"] h1.prince-log a,
+html[data-theme="dark"] h1.guanguan-log a,
 html[data-theme="dark"] .page-header-logo a {
   color: #b9bdc5;
 }

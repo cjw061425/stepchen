@@ -97,14 +97,14 @@ try {
   console.error('theme script (jQuery part) failed:', e);
 }
 
-const postContainerEl = document.querySelector('.prince-container')
+const postContainerEl = document.querySelector('.guanguan-container')
 
 // console.log(postContainerEl.getComputedStyle())
 
 setTocStyle = () => {
-  const tocEl = document.querySelector('.prince-container .toc')
+  const tocEl = document.querySelector('.guanguan-container .toc')
   const tocWidth = tocEl.getBoundingClientRect().width
-  const postWidth = document.querySelector('.prince-container').getBoundingClientRect().width
+  const postWidth = document.querySelector('.guanguan-container').getBoundingClientRect().width
   const bodyWidth = document.body.getBoundingClientRect().width
   console.log('(bodyWidth - postWidth) / 2 < tocWidth', (bodyWidth - postWidth) / 2 < tocWidth, bodyWidth,  (bodyWidth - postWidth) / 2, tocWidth)
   tocEl.style.left = `${(bodyWidth - postWidth) / 2 + postWidth + 20}px`
