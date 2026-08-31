@@ -10,7 +10,7 @@ categories:
 
 同事拿来一包咖啡豆，国外旅游带回来的，牌子market lane coffee，一家总部位于墨尔本的精品咖啡店。豆子是埃塞水洗，yaye浅烘。说不上是特别名贵的豆子，但相比于平常买的经济实惠豆，算得上是细糠了。
 
-
+<!-- more -->
 
 <img src="https://img.stepchen.com/IMG_20260826_1.jpg" alt="咖啡豆" />
 
