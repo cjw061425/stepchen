@@ -11,9 +11,9 @@ categories:
 
 <img src="https://img.stepchen.com/IMG_20260830_1.jpg" alt="" />
 
-<img src="https://img.stepchen.com/IMG_20260830_2.jpg" alt="" />
-
 <!-- more -->
+
+<img src="https://img.stepchen.com/IMG_20260830_2.jpg" alt="" />
 
 <img src="https://img.stepchen.com/IMG_20260830_3.jpg" alt="" />
 
