@@ -12,7 +12,7 @@ categories:
 
 
 
-<img src="https://img.stepchen.com/IMG_20260826_1.jpg" alt="咖啡豆" style="width:75%;height:auto;" />
+<img src="https://img.stepchen.com/IMG_20260826_1.jpg" alt="咖啡豆" />
 
 
 
