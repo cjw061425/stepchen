@@ -620,6 +620,7 @@ h1.guanguan-log a {
 
 .post-entry p {
   margin-bottom: 6px;
+  text-align: justify;
   animation: 3s infinite alternate slideIn;
 }
 
